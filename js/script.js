@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', ()=>{ // Страница "Поп�
         }
         return value.json();
     }).then(function (output) {
-        let inner = `<h2 class="col-12 text-center text-info">Пополярные за неделю</h2>`;
+        let inner = `<h2 class="col-12 text-center text-info">Popular for last week</h2>`;
        if(output.results.length === 0){
-        inner = `<h2 class="col-12 text-center text-info">По вашему запросу ничего не найденно</h2>`;
+        inner = `<h2 class="col-12 text-center text-info">Not find</h2>`;
        }
         let errorUrl = '';
         let stub = '';
